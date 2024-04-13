@@ -18,13 +18,14 @@ class RegisterPage extends StatelessWidget {
             const Text(
               "Create an account",
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 36,
-                  decoration: TextDecoration.none,
-                  fontWeight: FontWeight.w700),
+                color: Colors.black,
+                fontSize: 36,
+                decoration: TextDecoration.none,
+                fontWeight: FontWeight.w700,
+              ),
             ),
             const SizedBox(
-              height: 30,
+              height: 20,
             ),
             const TextField(
               decoration: InputDecoration(
@@ -55,8 +56,9 @@ class RegisterPage extends StatelessWidget {
             ),
             RichText(
                 text: TextSpan(
-              style: const TextStyle(
-                color: Colors.black,
+              style: TextStyle(
+                color: Colors.grey[600],
+                fontSize: 12,
               ),
               children: [
                 const TextSpan(text: "By clicking the "),
@@ -67,7 +69,7 @@ class RegisterPage extends StatelessWidget {
               ],
             )),
             const SizedBox(
-              height: 20,
+              height: 30,
             ),
             TextButton(
               onPressed: () {},
@@ -89,11 +91,17 @@ class RegisterPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 75,
+              height: 55,
             ),
             Column(
               children: [
-                const Text("- OR Continue with -"),
+                const Text(
+                  "- OR Continue with -",
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
                 const SizedBox(
                   height: 20,
                 ),
@@ -157,7 +165,7 @@ class RegisterPage extends StatelessWidget {
                         ),
                         child: const Icon(
                           Icons.facebook,
-                          color: Colors.blue,
+                          color: Color.fromRGBO(61, 77, 166, 1),
                           size: 25,
                         ),
                       ),
@@ -169,14 +177,13 @@ class RegisterPage extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: const TextStyle(
-                      color: Colors.black,
-                    ),
+                    style: const TextStyle(color: Colors.black, fontSize: 14),
                     text: "I Already Have an Account ",
                     children: [
                       TextSpan(
                           style: const TextStyle(
                             color: Color.fromRGBO(0xB3, 0x7C, 0xD6, 1),
+                            fontWeight: FontWeight.w600,
                           ),
                           text: "Login",
                           recognizer: TapGestureRecognizer()

@@ -25,7 +25,7 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.w700),
             ),
             const SizedBox(
-              height: 30,
+              height: 20,
             ),
             const TextField(
               decoration: InputDecoration(
@@ -43,7 +43,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             InkWell(
               onTap: () {},
@@ -53,11 +53,13 @@ class LoginPage extends StatelessWidget {
                     text: "Forgot Password?",
                     style: TextStyle(
                       color: Color.fromRGBO(0xB3, 0x7C, 0xD6, 1),
+                      fontSize: 12,
+                      letterSpacing: .5,
                     ),
                   )),
             ),
             const SizedBox(
-              height: 100,
+              height: 80,
             ),
             TextButton(
               onPressed: () {},
@@ -79,11 +81,17 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 60,
+              height: 80,
             ),
             Column(
               children: [
-                const Text("- OR Continue with -"),
+                const Text(
+                  "- OR Continue with -",
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
                 const SizedBox(
                   height: 20,
                 ),
@@ -147,7 +155,7 @@ class LoginPage extends StatelessWidget {
                         ),
                         child: const Icon(
                           Icons.facebook,
-                          color: Colors.blue,
+                          color: Color.fromRGBO(61, 77, 166, 1),
                           size: 25,
                         ),
                       ),
@@ -161,11 +169,13 @@ class LoginPage extends StatelessWidget {
                   text: TextSpan(
                     style: const TextStyle(
                       color: Colors.black,
+                      fontSize: 14,
                     ),
                     text: "Create An Account ",
                     children: [
                       TextSpan(
                           style: const TextStyle(
+                            fontWeight: FontWeight.w600,
                             color: Color.fromRGBO(0xB3, 0x7C, 0xD6, 1),
                           ),
                           text: "Sign Up",
